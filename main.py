@@ -38,7 +38,7 @@ class VideoProcessorApp(App):
             video = VideoFileClip(self.selected_video)
             duration = video.duration
             video.close()
-            popup = Popup(title='Video Information',
+            popup = Popup(title='Video Information Panel',
                           content=Label(text=f'Selected video duration: {duration} seconds'),
                           size_hint=(None, None), size=(400, 200))
             popup.open()
